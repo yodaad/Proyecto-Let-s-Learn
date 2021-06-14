@@ -33,7 +33,9 @@ public class Paises extends Palabras{
 
 	public String getPista () {
 		pista=listapistas[index];
-		
+		List<String> list=new ArrayList<String>(Arrays.asList(listapistas));
+		list.remove(index);
+		listapistas=list.toArray(new String[0]);
 		return pista;
 	}
 

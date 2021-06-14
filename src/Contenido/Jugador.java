@@ -4,10 +4,13 @@ public class Jugador {
 
 	protected int vidas=3;
 	protected int puntaje=0;
-	protected boolean respuesta=true;
 	protected boolean estado= true;
 
-
+	Evaluacion evals=new Evaluacion (); 
+	
+	boolean respuesta=evals.getRespuesta();
+	
+	
 	public Jugador () {
 
 	}
